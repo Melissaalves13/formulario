@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Inteligência Artificial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="quiz-container">
+
+    <section id="quiz-screen">
+      <div class="header">
+        <span id="question-number">Pergunta 1 de 10</span>
+        <span id="score">Pontos: 0</span>
+      </div>
+
+      <div class="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+
+      <h1 id="question">Carregando pergunta...</h1>
+
+      <div id="answers" class="answers"></div>
+
+      <button id="next-button" class="next-button" disabled>
+        Próxima pergunta
+      </button>
+    </section>
+
+    <section id="result-screen" class="result-screen hidden">
+      <div class="result-icon">🎉</div>
+
+      <h2>Quiz finalizado!</h2>
+
+      <p>Você acertou:</p>
+
+      <div id="final-score" class="final-score">0/10</div>
+
+      <h3 id="result-message"></h3>
+
+      <button id="restart-button" class="next-button">
+        Refazer o quiz
+      </button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
